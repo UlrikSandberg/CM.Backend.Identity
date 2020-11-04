@@ -1,0 +1,56 @@
+@model CM.Backend.Identity.AuthorizationServer.ViewModels.ErrorViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login V1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="~/LoginView/images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/LoginView/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/LoginView/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/LoginView/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/LoginView/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/LoginView/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/LoginView/css/util.css">
+    <link rel="stylesheet" type="text/css" href="~/LoginView/css/main.css">
+    <!--===============================================================================================-->
+</head>
+<body>
+
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100">
+            <span class="login100-form-title">
+                Forbidden
+            </span>
+            <p>@Model.Error.Error</p>
+            <p>@Model.Error.ErrorDescription</p>
+        </div>
+    </div>
+</div>
+
+
+<!--===============================================================================================-->
+<script src="~/LoginView/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+<script src="~/LoginView/vendor/bootstrap/js/popper.js"></script>
+<script src="~/LoginView/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<script src="~/LoginView/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+<script src="~/LoginView/vendor/tilt/tilt.jquery.min.js"></script>
+<script>$('.js-tilt').tilt({
+    scale: 1.1
+})</script>
+<!--https://colorlib.com/wp/template/login-form-v1/===============================================================================================-->
+<script src="~/LoginView/js/main.js"></script>
+</body>
+</html>
